@@ -1,4 +1,4 @@
-// script.js
+// script.js (без изменений)
 const GOOGLE_SHEET_ID = '1fCv50TBwrxraXDEgGiT7DKyuDKhoJg4fdPTPVWyhQ6Q';
 const SHEET_NAME = 'Лист1';
 
