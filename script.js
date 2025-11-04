@@ -87,10 +87,7 @@ function displayHeroes(heroes) {
             }).join('');
         }
         
-        const badgeHtml = '<div class="hero-badge">Герой</div>';
-        
         heroItem.innerHTML = `
-            ${badgeHtml}
             <div class="hero-content">
                 <div class="hero-text">
                     <h3>${hero.name}</h3>
