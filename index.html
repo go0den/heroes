@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши Герои - Земляки на СВО</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Наши Герои - Земляки</h1>
+            <p>Истории подвигов наших земляков на специальной военной операции</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="site-header">
+            <h2 class="site-title">Герои среди нас</h2>
+            <p class="site-description">Мы гордимся нашими земляками, проявившими мужество и отвагу</p>
+        </div>
+
+        <button class="btn refresh-btn" onclick="loadNews()">Обновить</button>
+        
+        <div id="news-container" class="heroes-grid">
+            <div class="loading">
+                <p>Загрузка историй о героях...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
