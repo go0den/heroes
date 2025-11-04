@@ -29,12 +29,12 @@ body {
 .side-decoration {
     position: fixed;
     top: 0;
-    width: 150px;
-    height: 100vh;
-    background-size: contain;
+    bottom: 0;
+    width: 300px; /* Ширина боковых изображений */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.1;
+    opacity: 0.3; /* Меньшая прозрачность */
     z-index: -1;
     pointer-events: none;
 }
@@ -206,6 +206,12 @@ header {
 
 .hero-item {
     background: linear-gradient(145deg, var(--card-light) 0%, rgba(178, 34, 34, 0.05) 100%);
+}
+
+@media (max-width: 1200px) {
+    .side-decoration {
+        width: 200px; /* Уменьшаем ширину на средних экранах */
+    }
 }
 
 @media (max-width: 768px) {
