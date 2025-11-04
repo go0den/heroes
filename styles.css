@@ -21,6 +21,32 @@ body {
     background-color: var(--bg-light);
     color: var(--text-light);
     line-height: 1.6;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* БОКОВЫЕ ДЕКОРАТИВНЫЕ ИЗОБРАЖЕНИЯ */
+.side-decoration {
+    position: fixed;
+    top: 0;
+    width: 150px;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.left-side {
+    left: 0;
+    background-position: left center;
+}
+
+.right-side {
+    right: 0;
+    background-position: right center;
 }
 
 header {
@@ -29,6 +55,8 @@ header {
     padding: 1rem;
     text-align: center;
     box-shadow: 0 4px 15px rgba(178, 34, 34, 0.3);
+    position: relative;
+    z-index: 1;
 }
 
 .container {
@@ -36,6 +64,8 @@ header {
     max-width: 1000px;
     margin: 0 auto;
     padding: 2rem 0;
+    position: relative;
+    z-index: 1;
 }
 
 .heroes-grid {
@@ -174,19 +204,6 @@ header {
     margin-bottom: 1.5rem;
 }
 
-.hero-badge {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: var(--secondary);
-    color: var(--dark);
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    z-index: 2;
-}
-
 .hero-item {
     background: linear-gradient(145deg, var(--card-light) 0%, rgba(178, 34, 34, 0.05) 100%);
 }
@@ -228,5 +245,10 @@ header {
         border-left: none !important;
         border-right: none !important;
         border-bottom: 3px solid var(--secondary);
+    }
+    
+    /* Скрываем боковые изображения на мобильных */
+    .side-decoration {
+        display: none;
     }
 }
