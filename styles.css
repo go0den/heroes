@@ -6,8 +6,8 @@
     --light: #fffaf0;
     --dark: #2f1d0e;
     --text-light: #333;
-    --bg-light: #fdf5e6;
-    --card-light: #ffffff;
+    --bg-light: #black;
+    --card-light: #black;
 }
 
 * {
@@ -258,3 +258,4 @@ header {
         display: none;
     }
 }
+
