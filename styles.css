@@ -18,7 +18,7 @@
 }
 
 body {
-    background-color: var(--bg-light);
+    background-color: var(--bg- black);
     color: var(--text-light);
     line-height: 1.6;
     position: relative;
@@ -258,4 +258,5 @@ header {
         display: none;
     }
 }
+
 
